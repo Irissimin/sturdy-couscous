@@ -2,3 +2,7 @@ body{
     font-family:  'Montserrat', sans-serif;
     font-family: 'Open Sans', sans-serif;
 }
+.container{
+    background-color: aquamarine;
+    padding: 20px,40px;
+}
