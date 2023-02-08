@@ -5,4 +5,22 @@ body{
 .container{
     background-color: aquamarine;
     padding: 20px,40px;
+    line-height: 28px;
+}
+h1{
+    font-family: 'Montserrat', sans-serif;
+font-family: 'Open Sans', sans-serif;
+font-family: 'Roboto Condensed', sans-serif;
+}
+.pullquote{
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Roboto Condensed', sans-serif;
+    color: blueviolet;
+    font-size: 32px;
+    font-style: italic;
+    line-height: 48px;
+}
+p{
+    width: 50%;
 }
