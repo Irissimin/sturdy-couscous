@@ -10,14 +10,14 @@
   
   body {
     font-family: "Roboto", sans-serif;
-    background: papayawhip;
+    background: rgb(248, 254, 230);
     min-height: 100vh;
   }
   
   main, header, footer {
     padding: 20px;
     border: 1px solid #000000;
-    color: #141414;
+    color: rgb(22, 47, 85);
   }
   
   .flex-container{
@@ -75,8 +75,11 @@
   }
   
   .pullquote {
-    color: tomato;
-    font-family: "Libre Baskerville", serif;
+    color: rgb(22, 47, 85);
+    font-family: 'Montserrat', sans-serif;
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Playfair Display', serif;
+    font-family: 'Roboto Condensed', sans-serif;
     font-style: italic;
     font-size: 1.68em;
     line-height: 1.4em;
