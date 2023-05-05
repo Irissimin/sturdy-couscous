@@ -6,6 +6,12 @@
 
 }
 
+#home-link {
+    padding:20px;
+    font-family: 'Roboto Condensed', sans-serif;
+    font-weight: bold;
+  }
+  
 html,body{
     height: 100%;
 }
