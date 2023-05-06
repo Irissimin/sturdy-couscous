@@ -6,19 +6,18 @@
   /* Add a black background color to the top navigation bar */
 .topnav {
     overflow: hidden;
-    background-color: #e9e9e9;
+    background-color: rgba(233, 233, 233, 0.5); 
+    
+  }
+  .topnav {
+    position: fixed;
+    width: 100%;
+    top: 0;
+    z-index: 1;
   }
   
   /* Style the links inside the navigation bar */
-  .topnav1 a {
-    float: left;
-    display: block;
-    color: black;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-    font-size: 17px;
-  }
+
   .topnav a {
     float: right;
     display: block;
@@ -27,6 +26,11 @@
     padding: 14px 16px;
     text-decoration: none;
     font-size: 17px;
+  }
+  .logo {
+    height: 50px; /* adjust the height as needed */
+    margin-right: 10px; /* add some space to the right of the logo */
+    float: left; /* float the logo to the left side */
   }
   
   /* Change the color of links on hover */
@@ -39,13 +43,13 @@
     color: black;
   }
   .topnav1 a.active {
-    background-color: #2196F3;
+    background-color: #000000;
     color: white;
   }
   
   /* Style the "active" element to highlight the current page */
   .topnav a.active {
-    background-color: #2196F3;
+    background-color: #000000;
     color: white;
   }
   
@@ -53,9 +57,9 @@
   .topnav input[type=text] {
     float: right;
     padding: 6px;
-    border: none;
+    border: 2px;
     margin-top: 8px;
-    margin-right: 16px;
+    margin-right: 40px;
     font-size: 17px;
   }
   
@@ -76,6 +80,10 @@
   html, body {
     height: 100%;
   }
+  body {
+    padding-top: 10px; /* change this value to match the height of your navigation bar */
+  }
+  
   .wrap{
 
     line-height: 200px;/*垂直居中关键*/
@@ -84,14 +92,16 @@
     
     height: 200px;
     
-    font-size: 2.4em;
+    font-size: 2.7em;
+ 
     
-    background-color: darkgray;
+    background-color: rgb(0, 0, 0);
+  
     
     }
   
   body {
-    font-family: "Roboto", sans-serif;
+    font-family: 'Fira Sans', sans-serif;
     background: white;
     min-height: 100vh;
   }
@@ -99,7 +109,7 @@
   main, header, footer {
     padding: 40px;
     border:none;
-    color: #141414;
+    color: #ffffff;
   }
   @import url('https://fonts.googleapis.com/css?family=Roboto');
 
@@ -111,7 +121,7 @@
   
 body, 
 html{
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Fira Sans', sans-serif;
   margin:10;
   padding:10;
 }
@@ -134,8 +144,8 @@ html{
     height: 480px;
     object-fit: cover;
     object-position: 0% 50%;
-  }
-  
+}
+
   section {
     width: 50%;
     flex-direction: row;
@@ -150,6 +160,11 @@ html{
     height: 100%;
     width: 50%;
   }
+  .column img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+  }
   
   h1 {
     text-transform: capitalize;
@@ -162,10 +177,11 @@ html{
   }
   
   .pullquote {
-    color: tomato;
+    color: rgb(0, 0, 0);
     text-align: center;
-    font-family: "Libre Baskerville", serif;
-    font-size: 1.68em;
+    font-family: 'Fira Sans', sans-serif;
+    font-size: 1.4em;
+    font-weight: 700;
     line-height: 1.4em;
     padding: 15px 0;
   }
@@ -236,7 +252,10 @@ html{
     .column {
       width: 100%;
     }
-  
+    .column img:first-child {
+      vertical-align: bottom;
+      max-width: 100%;
+    }
     .column:nth-of-type(2){
       border-bottom: 2px solid black;
     }
