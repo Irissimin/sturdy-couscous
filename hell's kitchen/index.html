@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Random Picture Generator</title>
+    <style>
+        .picture {
+            width: 300px;
+            height: 300px;
+            background-size: cover;
+            background-position: center;
+            margin-bottom: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Random Picture Generator</h1>
+    <div class="picture" id="picture">
+        <img id="image" src="" style="width:100%; height:100%;" />
+    </div>
+    <button onclick="generatePicture()">Generate</button>
+    
+    <script>
+        function generatePicture() {
+            var categories = [
+                { name: "Category 1", pictures: ["picture1.jpg", "picture2.jpg", "picture3.jpg"] },
+                { name: "Category 2", pictures: ["picture4.jpg", "picture5.jpg", "picture6.jpg"] },
+                { name: "Category 3", pictures: ["picture7.jpg", "picture8.jpg", "picture9.jpg"] }
+            ];
+            
+            var category = categories[Math.floor(Math.random() * categories.length)];
+            var picture = category.pictures[Math.floor(Math.random() * category.pictures.length)];
+            document.getElementById("image").src = picture;
+        }
+    </script>
+</body>
+</html>
